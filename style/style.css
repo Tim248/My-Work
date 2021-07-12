@@ -14,6 +14,8 @@
     --dots: #828282;
     --dots-active: #7177F1;
     --purple: #7177F1;
+    --button: #7177F1;
+    --headertext :#323232;
 }
 
 body {
@@ -111,6 +113,10 @@ ul {
     text-transform: capitalize;
 }
 
+.header__nav-btn {
+    background:  var(--button);
+}
+
 .header__nav-link:hover {
     color: var(--purple);
 }
@@ -129,7 +135,7 @@ ul {
     line-height: 22px;
     text-transform: capitalize;
     font-family: var(--MSB);
-    color: #EBEBEB;
+    color: ;
 }
 
 .header__content-title {
@@ -178,12 +184,12 @@ ul {
     width: 15px !important;
     height: 15px !important;
     border-radius: 50%;
-    background: var(--dots);
+    background: var(--dots) !important;
     border: none !important;
 }
 
 .header__indicators-btn.active {
-    background: var(--dots-active);
+    background: var(--dots-active) !important;
     width: 15px !important;
     height: 15px !important;
 }
@@ -348,7 +354,7 @@ ul {
     font-family: var(--MB);
     transition: 500ms;
     background: var(--purple);
-    color: var(--text);
+    color: white;
 }
 
 .accordion__item-icon {
@@ -359,7 +365,7 @@ ul {
     font-size: 30px;
     transition: 300ms;
     transform: rotate(-180deg);
-    color: var(--text);
+    color: white;
 }
 
 .accordion__button.collapsed .accordion__item-arrow {
@@ -373,7 +379,7 @@ ul {
 }
 
 .accordion__button .accordion__item-icon {
-    color: var(--text);
+    color: white;
 }
 
 .accordion__item:nth-of-type(1) .accordion__button.collapsed .accordion__item-icon {
@@ -519,7 +525,7 @@ ul {
 .footer__contacts-link {
     font-size: 24px;
     line-height: 29px;
-    color: white;
+    color: var(--text);
     letter-spacing: 0.1em;
 }
 
@@ -535,7 +541,7 @@ ul {
 .footer__ul-link {
     font-size: 24px;
     line-height: 29px;
-    color: white;
+    color: var(--text);
 }
 
 /* Footer end */
@@ -558,8 +564,9 @@ ul {
         --body: #151437;
         --text: #ffffff;
         --dots: #EBEBEB;
-    }
-
+        --button: #000000;
+        --headertext :#EBEBEB;
+    }   
     .logo::before {
         content: url(../images/svg/logo-dark.svg);
     }
@@ -588,6 +595,7 @@ ul {
     .header__content {
         margin-top: 25px;
         text-align: center;
+        column-gap: 15px;
     }
 
     .work__tab-desc {
