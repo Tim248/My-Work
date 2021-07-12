@@ -135,7 +135,7 @@ ul {
     line-height: 22px;
     text-transform: capitalize;
     font-family: var(--MSB);
-    color: ;
+    color: var(--headertext);
 }
 
 .header__content-title {
