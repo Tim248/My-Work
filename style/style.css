@@ -242,7 +242,7 @@ ul {
     content: url(../images/svg/figure1.svg);
     position: absolute;
     right: 0;
-    top: -110%;
+    top: -95%;
     z-index: -2;
 }
 
@@ -328,6 +328,11 @@ ul {
 
 .capabilities {
     margin-top: 75px;
+}
+
+.capabilities__link {
+    color: white;
+    text-decoration: underline;
 }
 
 .accordion__button {
@@ -420,7 +425,7 @@ ul {
     content: url(../images/svg/figure2.svg);
     position: absolute;
     left: 0;
-    top: -100%;
+    top: -50%;
     z-index: -1;
 }
 
@@ -493,8 +498,45 @@ ul {
 
 /* Footer  start */
 
+.footer {
+    margin-top: 20px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
 
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+}
 
+.footer__contacts-link:first-of-type {
+    margin-right: 30px;
+}
+
+.footer__contacts-link {
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.footer__ul {
+    margin: 15px 0;
+}
+
+.footer__ul-list {
+    column-gap: 30px;
+    padding: 0;
+}
+
+.footer__ul-link {
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+}
 
 /* Footer end */
 /* ************************ */
@@ -511,10 +553,6 @@ ul {
     }
 }
 
-
-
-
-
 @media (prefers-color-scheme: dark) {
     :root {
         --body: #151437;
@@ -526,8 +564,6 @@ ul {
         content: url(../images/svg/logo-dark.svg);
     }
 }
-
-
 
 @media (max-width:1200px) {
 
@@ -542,6 +578,31 @@ ul {
     }
 }
 
+@media (max-width:1000px) {
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .header__content {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .work__tab-desc {
+        gap: 15px;
+    }
+
+    .row__img {
+        margin-bottom: 15px;
+    }
+
+    .footer__content {
+        align-items: center;
+    }
+}
+
 @media (max-width:768px) {
     .about__text {
         left: 0;
@@ -550,6 +611,19 @@ ul {
     .about__title {
         font-size: 24px;
         text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer__contacts-link {
+       display: flex;
+       flex-direction: column;
+    }
+    .footer__contacts-link:first-of-type {
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 }
 
@@ -562,6 +636,11 @@ ul {
     .logo {
         max-width: 150px;
         width: 100%;
+    }
+    .footer__ul-list {
+        flex-direction: column;
+        padding: 0;
+        row-gap: 15px;
     }
 }
 
