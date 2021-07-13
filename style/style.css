@@ -16,6 +16,7 @@
     --purple: #7177F1;
     --button: #7177F1;
     --headertext: #323232;
+    --texthover: #404691;
 }
 
 body {
@@ -111,6 +112,9 @@ ul {
     line-height: 16px;
     color: var(--purple);
     text-transform: capitalize;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: color 300ms, background 300ms;
 }
 
 .header__nav-btn {
@@ -118,7 +122,8 @@ ul {
 }
 
 .header__nav-link:hover {
-    color: var(--purple);
+    color: var(--texthover);
+    background: #9297EF;
 }
 
 .header__nav-phone {
@@ -505,10 +510,12 @@ ul {
 /* Footer  start */
 
 .footer {
-    margin-top: 20px;
-    height: 70vh;
     display: flex;
     align-items: center;
+}
+
+.footer__logo {
+    margin-top: 100px;
 }
 
 .footer__content {
@@ -527,6 +534,9 @@ ul {
     line-height: 29px;
     color: var(--text);
     letter-spacing: 0.1em;
+    padding: 0 5px;
+    border-radius: 10px;
+    transition: color 300ms, background 300ms;
 }
 
 .footer__ul {
@@ -542,6 +552,19 @@ ul {
     font-size: 24px;
     line-height: 29px;
     color: var(--text);
+    padding: 0 5px;
+    border-radius: 10px;
+    transition: color 300ms, background 300ms;
+}
+
+.footer__ul-link:hover {
+    color: var(--texthover);
+    background: #9297EF;
+}
+
+.footer__contacts-link:hover {
+    color: var(--texthover);
+    background: #9297EF;
 }
 
 /* Footer end */
@@ -564,8 +587,9 @@ ul {
         --body: #151437;
         --text: #ffffff;
         --dots: #EBEBEB;
-        --button: #000000;
+        --button: none;
         --headertext: #EBEBEB;
+        --texthover: white;
     }
 
     .logo::before {
