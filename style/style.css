@@ -493,6 +493,15 @@ ul {
     text-transform: capitalize;
 }
 
+.work__tab_text-link {
+    color: white;
+}
+
+.work__tab_text-link:hover {
+    color: currentColor;
+    text-decoration: underline;
+}
+
 .work__tab-btn {
     max-width: 190px;
     width: 100%;
